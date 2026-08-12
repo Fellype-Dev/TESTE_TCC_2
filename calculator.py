@@ -4,8 +4,8 @@ import math  # Warning/Lint: Unused import
 import json  # Warning/Lint: Unused import
 
 # Security Risk: Hardcoded API Key and Database Credentials
-OPENAI_API_KEY = "sk-proj-99887766554433221100aabbccddeeff"
-DATABASE_URL = "postgres://admin:password123@localhost:5432/calc_db"
+OPENAI_API_KEY = "sk-proj-9988776654433221100aabbccddeeff"
+DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
 
 class Calculator:
     def __init__(self, history=[]):  # Bug: Mutable default argument
