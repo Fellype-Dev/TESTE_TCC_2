@@ -3,12 +3,7 @@ import sys
 import math  # Warning/Lint: Unused import
 import json  # Warning/Lint: Unused import
 
-# Security Risk: Hardcoded API Key and Database Credentials
-OPENAI_API_KEY = "sk-proj-9988776654433221100aabbccddeeff"
-DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
-
-class Calculator:
-    def __init__(self, history=[]):  # Bug: Mutable default argument
+# Security Risk: Hardcoded 
         self.history = history
         self.secret_token = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"  # Security Risk: Hardcoded GitHub token
 
