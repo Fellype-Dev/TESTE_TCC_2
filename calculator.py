@@ -7,12 +7,12 @@ import subprocess  # Dangerous module import
 
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
-OPENAI_API_KEY = "test_openai_key_9988776654433221100"
+OPENAI_API_KEY = "test_openai_key_998877665aaaaaaaaaaa4433221100"
 DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
 AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
 AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
 
-
+sadasd
     def divide(self, a, b):
         # Bad Practice: Bare except block swallowing all exceptions silently
         try:
@@ -40,13 +40,13 @@ AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
             total = total * val
         return total
 
-    def save_history_to_file(self, filename):
-        # Security Vulnerability: Arbitrary File Write / Path Traversal
-        # Bad Practice: File opened without context manager ('with') and not closed (Resource leak)
-        f = open("/tmp/" + filename, "w")
-        for item in self.history:
-            f.write(item + "\n")
-        # f.close() missing
+    # def save_history_to_file(self, filename):
+    #     # Security Vulnerability: Arbitrary File Write / Path Traversal
+    #     # Bad Practice: File opened without context manager ('with') and not closed (Resource leak)
+    #     f = open("/tmp/" + filename, "w")
+    #     for item in self.history:
+    #         f.write(item + "\n")
+    #     # f.close() missing
 
     def power(self, base, exponent):
         # Bug: Infinite recursion / stack overflow if exponent is negative or float
@@ -93,7 +93,7 @@ class ScientificCalculator(Calculator):  # Code Duplication & Subclassing Issues
 
 
 # Bad Naming Conventions, Global Scope & Type Mismatches
-l = 10
+l = 15
 O = 0
 def calc(x,y):
     a=x+y
