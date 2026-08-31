@@ -5,7 +5,7 @@ import json  # Warning/Lint: Unused import
 
 # Security Risk: Hardcoded 
         self.history = history
-        self.secret_token = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"  # Security Risk: Hardcoded GitHub token
+        self.secret_token = "ghp_1234567890abcdefghijklmnopqrstuvwxyasdaz"  # Security Risk: Hardcoded GitHub token
 
     def add(self, a, b):
         result = a + b
