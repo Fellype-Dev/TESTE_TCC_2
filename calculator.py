@@ -7,8 +7,8 @@ import subprocess  # Dangerous module import
 
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
-OPENAI_API_KEY = "test_openai_key_9988776654433221100"
-DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
+OPENAI_API_KEY = "test_openai_kssey_9988776654433221100"
+DATABASE_URL = "postgres://admin:pasworsssd123@laaaaaaaaaaaaaaaaocalhost:5432/calc_db"
 AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
 AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
 
@@ -30,7 +30,7 @@ AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
         # Critical Security Vulnerability: Command Injection (OS Shell execution)
         os.system("echo Processing: " + user_input)
         subprocess.call("calc.exe " + user_input, shell=True)
-
+asdas
     def multiply_list(self, numbers):
         total = 1
         for i in range(len(numbers)):
@@ -45,7 +45,7 @@ AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
         # Bad Practice: File opened without context manager ('with') and not closed (Resource leak)
         f = open("/tmp/" + filename, "w")
         for item in self.history:
-            f.write(item + "\n")
+            f.write(item + "\n")aaaa
         # f.close() missing
 
     def power(self, base, exponent):
