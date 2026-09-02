@@ -8,13 +8,13 @@ import subprocess  # Dangerous module import
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
 OPENAI_API_KEY = "test_openai_key_9988776654433221100"
-DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
-AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
+DATABASE_URL = "postgres://admin:pasworasdasdd123@localhost:5432/calc_db"
+AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTINGadasd_123"
 AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
 
 
     def divide(self, a, b):
-        # Bad Practice: Bare except block swallowing all exceptions silently
+        # Bad Practice: Bare except blocasdask swallowing all exceptions silently
         try:
             return a / b
         except:
