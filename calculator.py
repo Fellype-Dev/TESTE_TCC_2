@@ -7,9 +7,9 @@ import subprocess  # Dangerous module import
 
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
-OPENAI_API_KEY = "test_openai_key_9988776654433221100"
-DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
-AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
+OPENAI_API_KEY = "test_openai_key_998877asdasdasdasd00"
+DATABASE_URL = "postgres://admin:paswasdasdasdasdhost:5432/calc_db"
+AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESasdasdasdasd123"
 AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
 
 
@@ -31,14 +31,7 @@ AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
         os.system("echo Processing: " + user_input)
         subprocess.call("calc.exe " + user_input, shell=True)
 
-    def multiply_list(self, numbers):
-        total = 1
-        for i in range(len(numbers)):
-            val = numbers[i]
-            if val == True:  # Bad Practice: Comparison with boolean using '=='
-                pass
-            total = total * val
-        return total
+
 
     def save_history_to_file(self, filename):
         # Security Vulnerability: Arbitrary File Write / Path Traversal
