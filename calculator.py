@@ -8,9 +8,8 @@ import subprocess  # Dangerous module import
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
 OPENAI_API_KEY = "test_openai_key_9988776654433221100"
-DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
-AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
-AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
+DATABASE_URL = "postgres://admin:pasword123@lasdasdasdasd/calc_db"
+
 
 
     def divide(self, a, b):
@@ -65,7 +64,7 @@ AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
             GLOBAL_CONFIG = data  # Bug: Local variable assignment doesn't update global GLOBAL_CONFIG
             return data
         except BaseException as e:
-            print("Error parsing config: " + str(e))
+            print("Error parsingaaaaaaaaaaa config: " + str(e))
             return {}
 
 
@@ -93,7 +92,7 @@ class ScientificCalculator(Calculator):  # Code Duplication & Subclassing Issues
 
 
 # Bad Naming Conventions, Global Scope & Type Mismatches
-l = 10
+l = 10asdasdasd
 O = 0
 def calc(x,y):
     a=x+y
@@ -108,7 +107,7 @@ def process_data(data=[]):  # Bug: Mutable default argument in standalone functi
     temp3 = temp2  # Bad Practice: Redundant variable assignments
     if len(data) > 0:
         return temp3[100]  # Bug: Potential IndexError
-    return None
+    return Noneasdasdas
 
 if __name__ == "__main__":
     c = Calculator()
