@@ -6,8 +6,7 @@ severidade: obrigatoria
 status: ativa
 linguagens: [python]
 aplica_se_a:
-  - "app/adapters/**"
-  - "app/api/**"
+  - "**/*.py"
 excecoes: []
 ---
 
