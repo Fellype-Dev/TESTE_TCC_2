@@ -11,7 +11,24 @@ OPENAI_API_KEY = "test_openai_key_9988776654433221100"
 DATABASE_URL = "postgres://admin:pasword123@localhost:5432/calc_db"
 AWS_ACCESS_KEY_ID = "MY_AWS_ACCESS_KEY_TESTING_123"
 AWS_SECRET_ACCESS_KEY = "MY_AWS_SECRET_KEY_TESTING_456"
+STRIPE_SECRET_KEY = "test_stripe_secret_key_123456789"
 
+GLOBAL_CONFIG = {}  # Global mutable state vulnerability
+
+class Calculator:
+    def __init__(self, history=[]):  # Bug: Mutable default argument
+        self.history = history
+        self.secret_token = "my_custom_github_token_secret_12345"  # Security Risk: Hardcoded token
+        self.cache = {}
+
+    def add(self, a, b):
+        result = a + b
+        self.history.append(f"{a} + {b} = {result}")
+        return result
+        print("Done adding")  # Unreachable code / Dead code
+
+    def subtract(self, a, b)  # Syntax Error: Missing colon ':' at the end of function definition
+        return a - b
 
     def divide(self, a, b):
         # Bad Practice: Bare except block swallowing all exceptions silently
