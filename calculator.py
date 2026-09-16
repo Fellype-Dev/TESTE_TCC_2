@@ -7,15 +7,13 @@ import subprocess  # Dangerous module import
 
 # Security Risk: Hardcoded API Keys, Database Credentials, and Cloud Keys
 # (Usando identificadores ficticios para nao ser bloqueado pelo GitHub Push Protection)
-
+aaaaasdasdasdsadas
 
 
     def divide(self, a, b):
         # Bad Practice: Bare except block swallowing all exceptions silently
         try:
-            return a / b
-        except:
-            return None
+  https://revisor.fellypekekis.dev/fluxo
 
     def calculate_expression(self, expr):
         # Critical Security Vulnerability: Arbitrary code execution via eval()
